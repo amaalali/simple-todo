@@ -26,7 +26,6 @@ body {
 
 header {
   background: #FF0000;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
   padding: 20px 15px 15px 15px;
   position: relative;
 }
@@ -36,7 +35,8 @@ header {
 }
 
 h1 {
-  font-size: 1.5em;
+  color: white;
+	font-size: 1.5em;
   margin: 0;
   margin-bottom: 10px;
   display: inline-block;
@@ -55,6 +55,7 @@ form {
   background: transparent;
   border: none;
   width: 100%;
+  padding-left: 10px;
   padding-right: 80px;
   font-size: 1em;
 }
