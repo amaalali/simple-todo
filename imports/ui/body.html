@@ -11,9 +11,11 @@
 			{{> loginButtons }}
 		</header>
 		Tasks: {{incompleteCount}}
-		<form class="new-task">
-			<input type="text" name="text" placeholder="Add new task"/>
-		</form>
+		{{#if currentUser}}
+			<form class="new-task">
+				<input type="text" name="text" placeholder="Add new task"/>
+			</form>
+		{{/if}}
 		<ul>
 			{{#each tasks}}
 				{{> task}}
