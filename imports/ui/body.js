@@ -26,14 +26,11 @@ Template.body.helpers({
 Template.body.events({
 	'submit .new-task' (events) {
 		event.preventDefault();
-		const text = event.target.text.value;
-		Tasks.insert({
-			text,
-			createdAt: new Date(),
-			owner: Meteor.userId(),
-			username: Meteor.user().username,
-		});	
-		event.target.text.value = '';
+		const target = event.target;	
+		const text = target.text.value;
+		Meteor.call('tasks.insert', text);
+		// event.target.text.value = '';
+		target.text.value = '';
 	},
 	'change .hide-completed input' (event, instance) {
 		instance.state.set('hideCompleted', event.target.checked);
