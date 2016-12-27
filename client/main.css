@@ -66,6 +66,14 @@ form {
   outline: 0;
 }
 
+.list-info-bar {
+  margin: 0;
+  padding-top: 10px;
+	padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 ul {
   margin: 0;
   padding-top: 15px;
@@ -115,6 +123,10 @@ header .hide-completed {
   float: right;
 }
 
+.hide-completed {
+  float: right;
+}
+
 .toggle-private {
   margin-left: 5px;
 }
@@ -125,7 +137,7 @@ header .hide-completed {
 
 @media (max-width: 600px) {
   li {
-    padding: 12px 15px;
+    padding: 15px 15px;
   }
 
   .search {
@@ -134,6 +146,6 @@ header .hide-completed {
   }
 
   .new-task input {
-    padding-bottom: 5px;
+    padding-bottom: 0px;
   }
 }

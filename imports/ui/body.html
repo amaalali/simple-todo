@@ -2,15 +2,15 @@
 	<div class="container">
 		<header>
 			<h1>Todo List</h1>
-			
+			{{> loginButtons }}
+		</header>
+		<div class='list-info-bar'>
 			<label class="hide-completed">
 				<input type="checkbox" />
 				Hide Completed Tasks
-			</label>	
-
-			{{> loginButtons }}
-		</header>
-		Tasks: {{incompleteCount}}
+			</label>
+			Tasks: {{incompleteCount}}
+		</div>
 		{{#if currentUser}}
 			<form class="new-task">
 				<input type="text" name="text" placeholder="Add new task"/>
